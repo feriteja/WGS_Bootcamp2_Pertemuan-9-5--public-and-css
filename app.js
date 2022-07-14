@@ -13,8 +13,6 @@ app.set("layout extractStyles", true);
 app.use(expressLayouts);
 
 app.use(express.static("public"));
-app.use("image", express.static("image"));
-app.use("style", express.static("style"));
 
 app.use((req, res, next) => {
   console.log("Time:", Date.now());
